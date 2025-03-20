@@ -1,0 +1,41 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.back-button,
+.verify-button {
+  flex: 1;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button {
+  background-color: #ffff;
+  color: #2f80ed;
+  border: #2f80ed solid 2px;
+}
+
+.back-button:hover {
+  background-color: #bbb;
+}
+
+.verify-button {
+  background-color: #2f80ed;
+  color: white;
+}
+
+.verify-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

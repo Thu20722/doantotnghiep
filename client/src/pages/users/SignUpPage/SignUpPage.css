@@ -1,0 +1,186 @@
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    padding: 100px 0;
+    margin-top: 80px;
+}
+
+.signup-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.signup-form {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.signup-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.input-group label {
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    background-color: white;
+    border: 1px solid #2f80ed;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #173cc5;
+    outline: none;
+    box-shadow: 0 0 4px rgba(47, 128, 237, 0.5);
+}
+
+/* Hàng chứa Quận/Huyện - Phường/Xã */
+.input-group-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.input-group-row select {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #2f80ed; /* Thêm border */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng focus khi chọn */
+.input-group-row select:focus {
+    border-color: #173cc5;
+    outline: none;
+    box-shadow: 0 0 4px rgba(47, 128, 237, 0.5);
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+.signup-button {
+    width: 70%;
+    text-align: center;
+    padding: 12px;
+    background-color: #2f80ed;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+    background: #1b4dff;
+    transform: scale(1.05);
+}
+
+/* Footer của form */
+.signup-footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Link đăng nhập */
+.signup-link {
+    color: #1A237E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #2f80ed;
+}
+
+/* Footer của trang */
+.footer {
+    width: 100%;
+}
+
+/* Ẩn icon mắt mặc định của trình duyệt */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+    display: none !important;
+}

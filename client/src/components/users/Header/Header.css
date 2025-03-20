@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.header {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0px 80px;
+  /* background-color: white;  */
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 3fr 10fr 3fr;
+  align-items: center;
+}
+
+.logo {
+  width: 143px;
+  height: 100px;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #808080;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #2f80ed;
+}
+
+.navbar a:active {
+  color: #0056b3;
+}
+
+.user {
+  justify-self: end;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info span {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.user .chakra-button {
+  width: 150px;
+  background-color: #2f80ed;
+  color: white;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 99px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user .chakra-button:hover {
+  background-color: #1b4dff;
+}
+
+.user .chakra-button:active {
+  background-color: #0f3cd9;
+}
+
+.user .chakra-button:focus {
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.5);
+}
