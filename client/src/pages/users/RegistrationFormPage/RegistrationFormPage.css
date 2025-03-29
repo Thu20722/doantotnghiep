@@ -1,0 +1,114 @@
+.registrationform-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.registrationform-page .container {
+  width: 90%;
+  margin: auto;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registrationform-page .form-register-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.form-register-container h2 {
+  margin-bottom: 16px;
+  color: #32338F;
+  font-weight: 500;
+}
+
+/* Câu hỏi */
+.question {
+  margin-bottom: 15px;
+  border-radius: 16px;
+  border: 1px solid #2f80ed;
+  padding: 0 0px 10px 0px;
+  align-items: center;
+}
+
+.question p {
+  background-color: #2f80ed;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 12px 12px 0px 0px;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.question .other {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.question .other input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 0px 10px 5px; 
+  font-size: 12px;
+  outline: none;
+}
+
+.question .other::placeholder {
+  position: absolute;
+  left: 10px;
+  color: #808080;
+}
+
+.question label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 5px 16px;
+  font-size: 12px;
+}
+
+.question input[type="checkbox"],
+.question input[type="radio"] {
+  width: 14px;
+  height: 14px;
+}
+
+/* Nút bấm */
+.continue-button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.btn-continue,
+.btn-back {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-back {
+  width: 280px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffff;
+  color: #2f80ed;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #2f80ed;
+  border-radius: 99px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-back:hover {
+  background-color: #dce3f0;
+}
+

@@ -1,48 +1,22 @@
-import HomePage from "../pages/users/HomePage/HomePage";
-import FaqPage from "../pages/users/FaqPage/FaqPage";
-import ContactPage from "../pages/users/ContactPage/ContactPage"
-import SignUpPage from "../pages/users/SignUpPage/SignUpPage";
-import SignInPage from "../pages/users/SignInPage/SignInPage";
-import ResetPasswordPage from "../pages/users/ResetPassPage/ResetPassPage"
-import VerifyCodePage from "../pages/users/ResetPassPage/VerifyCodePage"
-import NewPasswordPage from "../pages/users/ResetPassPage/NewPasswordPage"
-import Verificationpage from "../pages/users/SignUpPage/VerificationPage"
+import React from "react";
+import userRoutes from "../pages/users";
+// import adminRoutes from "../pages/admin";
+// import hospitalRoutes from "../pages/hospital";
+// import staffRoutes from "../pages/staff";
+// import partnerRoutes from "../pages/partners";
 
+// Hàm tạo routes động
+const generateRoutes = (role, routes) =>
+  Object.keys(routes).map((key) => ({
+    path: `/${role}/${key}`,
+    element: React.createElement(routes[key]),
+  }));
+
+// Kết hợp tất cả routes
 export const routes = [
-  {
-    path: "/users/HomePage",
-    element: <HomePage />,
-  },
-  {
-    path: "/users/FaqPage",
-    element: <FaqPage />,
-  },
-  {
-    path: "/users/ContactPage",
-    element: <ContactPage />,
-  },
-  {
-    path: "/users/SignUpPage",
-    element: <SignUpPage />,
-  },
-  {
-    path: "/users/SignInPage",
-    element: <SignInPage />,
-  },
-  {
-    path: "/users/Verificationpage",
-    element: <Verificationpage />,
-  },
-  {
-    path: "/users/ResetPasswordPage",
-    element: <ResetPasswordPage />,
-  },
-  {
-    path: "/users/VerifyCodePage",
-    element: <VerifyCodePage />,
-  },
-  {
-    path: "/users/NewPasswordPage",
-    element: <NewPasswordPage />,
-  },
-]; 
+  ...generateRoutes("users", userRoutes),
+  // ...generateRoutes("admin", adminRoutes),
+  // ...generateRoutes("hospital", hospitalRoutes),
+  // ...generateRoutes("staff", staffRoutes),
+  // ...generateRoutes("partners", partnerRoutes),
+];

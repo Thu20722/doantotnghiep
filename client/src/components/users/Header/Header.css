@@ -41,10 +41,9 @@
   color: #2f80ed;
 }
 
-.navbar a:active {
-  color: #0056b3;
+.navbar a.active {
+  color: #2f80ed;
 }
-
 .user {
   justify-self: end;
 }

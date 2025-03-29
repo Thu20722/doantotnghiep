@@ -23,11 +23,12 @@ const CustomInput = forwardRef(({ value, onClick }, ref) => (
       readOnly
       ref={ref}
       placeholder="Chọn khoảng thời gian"
-      pr="26rem"
+      pr="3rem"
       border="none"
       fontSize="16px"
       fontFamily="Inter, sans-serif"
       color="#000"
+      width = "700px"
       _hover={{ borderColor: "#2F80ED" }}
       _placeholder={{ color: "#000", fontWeight: "normal", fontSize: "14px" }}
     />

@@ -1,0 +1,144 @@
+.appointment-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.appointment-page .container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.title-info h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #32338f;
+  text-align: left;
+}
+
+.appointment-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.personal-info {
+  width: 40%;
+}
+
+.info-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.info-box:last-child {
+  background: #eff3f6;
+}
+
+.appointment-content h3 {
+  font-size: 16px;
+  color: #2f80ed;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.info-box .user-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.info-box .user-details strong {
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+  text-align: left;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.special-info {
+  flex: 1;
+  text-align: right;
+  font-weight: 400;
+  color: #131927;
+}
+
+.icon {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.register-box {
+  width: 60%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 160px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.register-box p {
+  color: #2f80ed;
+  font-size: 14px;
+}
+
+.register-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-register {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  background-color: #2f80ed;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-register:hover {
+  background: #1b4dff;
+}

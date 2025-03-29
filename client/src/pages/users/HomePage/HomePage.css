@@ -103,7 +103,7 @@
 }
 
 .search_button:hover {
-  background: #0056b3;
+  background-color: #1b4dff;
 }
 
 /* Phần Quy trình thực hiện */
@@ -273,6 +273,8 @@
   bottom: 8px !important; 
 }
 
-
+.search_input_container {
+  width: 300px;
+}
 
 

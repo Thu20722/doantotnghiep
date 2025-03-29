@@ -44,7 +44,9 @@ const SignUpPage = () => {
 
   return (
     <div className="signup">
-      <Header />
+      <div className="header">
+          <Header />
+        </div>
       <div className="signup-container">
         <img src={SignUpImage} alt="Background" className="signup-bg" />
         <div className="signup-form">
@@ -57,12 +59,12 @@ const SignUpPage = () => {
           <div className="input-group"><label>Số điện thoại bàn (nếu có)</label><input type="text" name="phone" onChange={handleChange} placeholder="VD: 0909090909" /></div>
           <div className="input-group"><label>Email</label><input type="email" name="email" onChange={handleChange} placeholder="Vui lòng nhập email" /></div>
           <div className="input-group"><label>Nghề nghiệp</label><input type="text" name="job" onChange={handleChange} placeholder="Vui lòng nhập nghề nghiệp" /></div>
-          <div className="input-group"><label>Địa chỉ liên hệ</label><input type="text" name="address" onChange={handleChange} placeholder="Vui lòng nhập địa chỉ liên hệ" /></div>
+          <div className="input-addr"><label>Địa chỉ liên hệ</label></div>
           <div className="input-group-row">
-            <select name="district" onChange={handleChange}><option value="">Quận/Huyện</option></select>
+            <select name="district" onChange={handleChange}><option value="">Tỉnh</option></select>
             <select name="ward" onChange={handleChange}><option value="">Phường/Xã</option></select>
           </div>
-          <div className="input-group"><label>Số nhà, tên đường</label><input type="text" name="street" onChange={handleChange} placeholder="Vui lòng nhập số nhà tên đường" /></div>
+          <div className="input-group"><input type="text" name="street" onChange={handleChange} placeholder="Vui lòng nhập số nhà tên đường" /></div>
           <div className="input-group"><label>Mật khẩu</label>
             <div className="password-container">
               <input type={formData.showPassword ? "text" : "password"} name="password" onChange={handleChange} placeholder="Tối thiểu 6 ký tự" />

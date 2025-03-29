@@ -1,0 +1,22 @@
+.status-container {
+  text-align: center;
+  background: white;
+  /* padding: 20px; */
+  border-radius: 99px;
+  margin: 10px;
+}
+
+.status-button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 99px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Hiệu ứng hover */
+.status-button:hover {
+  opacity: 0.8;
+}

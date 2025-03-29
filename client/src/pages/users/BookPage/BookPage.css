@@ -1,0 +1,107 @@
+.book-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.book-page .container {
+  width: 90%;
+  margin: auto;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 150px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: ll;
+  gap: 8px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.menu-item.active {
+  background: #007bff;
+  color: white;
+}
+
+.menu-item:not(.active):hover {
+  background: #f0f0f0;
+}
+
+.menu-icon {
+  width: 16px; /* Kích thước icon */
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+.book-page .filter-select {
+  width: 300px;
+}
+.book-page .react-datepicker-wrapper {
+  width: 280px !important;
+}
+
+.book-page .react-datepicker__input-container input {
+  width: 100% !important;
+}
+.continue-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn-continue {
+  width: 280px;
+  text-align: center;
+  padding: 10px;
+  background-color: #2f80ed;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-continue:hover {
+  background: #1b4dff;
+}
