@@ -15,7 +15,7 @@ const RegistrationFormPage = () => {
 
         <div className="content-wrapper">
           {/* Sidebar */}
-          <div className="sidebar">
+          <div className="sidebar-user">
             <ul className="menu-list">
               <li className="menu-item">
                 <FaClock className="menu-icon" /> Thời gian và địa điểm

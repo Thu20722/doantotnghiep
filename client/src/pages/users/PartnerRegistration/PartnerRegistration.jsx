@@ -24,7 +24,7 @@ const PartnerRegistration = () => {
 
         <div className="content-wrapper">
           {/* Sidebar */}
-          <div className="sidebar">
+          <div className="sidebar-user">
             <ul className="menu-list">
               <li className="menu-item" onClick={() => {
                   console.log("Navigating...");

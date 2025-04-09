@@ -43,7 +43,7 @@ const BookPage = () => {
       <div className="container">
         <h1 className="title">Lịch hẹn của bạn</h1>
         <div className="content-wrapper">
-          <div className="sidebar">
+          <div className="sidebar-user">
             <ul className="menu-list">
               <li className="menu-item active">
                 <FaClock className="menu-icon" /> Thời gian và địa điểm

@@ -67,16 +67,17 @@
 
 .input-group textarea {
   height: 100px;
+  background-color: #ffffff;
 }
 
 .submit-container {
   display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.submit-button {
+.contact .submit-button {
   width: 50%;
   text-align: center;
   padding: 10px;

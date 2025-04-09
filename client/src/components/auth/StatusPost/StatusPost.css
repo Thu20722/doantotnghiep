@@ -1,0 +1,19 @@
+.status-container-post {
+  min-width: 100px;
+}
+
+.status-button-post {
+  border: none;
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 99px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+/* Hiệu ứng hover */
+.status-button-post:hover {
+  opacity: 0.8;
+}

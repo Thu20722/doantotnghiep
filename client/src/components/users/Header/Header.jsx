@@ -1,20 +1,26 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./Header.css";
-import logoImage from "../../../assets/image/Logo.svg";
+import React, { useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
+import logoImage from "../../../assets/image/Logo.svg";
 import { Avatar } from "/src/components/ui/avatar.jsx";
-import { useNavigate } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
 
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) setUser(storedUser);
+  }, []);
+
   const handleRegister = () => {
-    setUser({
+    const newUser = {
       name: "Ngô Thị Thanh Thư",
-      // avatar: "https://i.pravatar.cc/150?img=5",
-    });
+      avatar: "https://i.pravatar.cc/150?img=5",
+    };
+    setUser(newUser);
+    localStorage.setItem("user", JSON.stringify(newUser));
   };
 
   return (
@@ -22,52 +28,35 @@ const Header = () => {
       <div className="logo">
         <img src={logoImage} alt="Logo" aria-label="Logo" />
       </div>
+
       <nav className="navbar">
-        <NavLink
-          to="/users/HomePage"
-          className={({ isActive }) => (isActive ? "active" : "")}
-          title="Trang chủ người dùng">
-          Trang chủ
-        </NavLink>
-        <NavLink
-          to="/users/AppointmentPage"
-          className={({ isActive }) => (isActive ? "active" : "")}
-          title="Lịch hẹn">
-          Lịch hẹn
-        </NavLink>
-        <NavLink
-          to="/users/AppointmentHistoryPage"
-          className={({ isActive }) => (isActive ? "active" : "")}
-          title="Lịch sử hẹn">
-          Lịch sử hẹn
-        </NavLink>
-        <NavLink
-          to="/users/FaqPage"
-          className={({ isActive }) => (isActive ? "active" : "")}
-          title="Hỏi đáp">
-          Hỏi-đáp
-        </NavLink>
-        <NavLink
-          to="/users/ContactPage"
-          className={({ isActive }) => (isActive ? "active" : "")}
-          title="Liên hệ">
-          Liên hệ
-        </NavLink>
+        {[
+          { path: "/users/HomePage", label: "Trang chủ" },
+          { path: "/users/AppointmentPage", label: "Lịch hẹn" },
+          { path: "/users/AppointmentHistoryPage", label: "Lịch sử hẹn" },
+          { path: "/users/FaqPage", label: "Hỏi - Đáp" },
+          { path: "/users/ContactPage", label: "Liên hệ" },
+        ].map((item) => (
+          <NavLink key={item.path} to={item.path} activeClassName="active">
+            {item.label}
+          </NavLink>
+        ))}
       </nav>
+
       <div className="user">
         {user ? (
           <div
             className="user-info"
             onClick={() => navigate("/users/PersonalInformationPage")}
             style={{ cursor: "pointer" }}>
-            <Avatar src={user.avatar} style={{ backgroundColor: "#ECF4FD" }} />
+            <Avatar src={user.avatar} />
             <span>{user.name}</span>
           </div>
         ) : (
-          <Button colorScheme="blue" onClick={handleRegister}>
-            Đăng ký
+          <Button colorScheme="blue" onClick={() => navigate("/users/SignInPage")}>
+            Đăng nhập 
           </Button>
-        )}
+         )} 
       </div>
     </header>
   );

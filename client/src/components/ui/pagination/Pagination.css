@@ -1,0 +1,36 @@
+.pagination button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #2f80ed;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  
+}
+
+.pagination button[aria-pressed="true"] {
+  background-color: #2f80ed;
+  color: white;
+}
+
+.pagination button:not([aria-pressed="true"]) {
+  background-color: #eef6fc;
+  color: #2f80ed;
+  
+}

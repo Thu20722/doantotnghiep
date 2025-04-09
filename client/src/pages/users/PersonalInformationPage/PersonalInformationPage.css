@@ -20,7 +20,7 @@
   flex-grow: 1;
 }
 
-.personal-information-page .sidebar {
+.personal-information-page .sidebar-user {
   width: 250px;
 }
 
@@ -32,12 +32,12 @@
 }
 
 .personal-information-page .info-box {
-  width: 50%; 
+  width: 50%;
 }
 
 .tilte-personal {
-    padding-bottom: 20px;
-    color: #1b4dff;
+  padding-bottom: 20px;
+  color: #1b4dff;
 }
 .button-container {
   display: flex;
@@ -47,7 +47,7 @@
   padding-top: 20px;
 }
 
-.logout-button {
+.button-container .logout-button {
   width: 200px;
   text-align: center;
   padding: 10px;
@@ -61,7 +61,7 @@
   margin-top: 30px;
 }
 
-.update-button {
+.button-container .update-button {
   width: 200px;
   text-align: center;
   padding: 10px;

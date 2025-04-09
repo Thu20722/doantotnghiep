@@ -1,0 +1,18 @@
+.status-container-campaign {
+  min-width: 60px;
+}
+
+.status-button-campaign {
+  border: none;
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 99px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.status-button-campaign:hover {
+  opacity: 0.8;
+}

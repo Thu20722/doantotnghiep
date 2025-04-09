@@ -22,7 +22,7 @@ const PersonalInformationPage = () => {
       <div className="container">
         <h1 className="title"> Thông tin cá nhân</h1>
         <div className="content-wrapper">
-          <div className="sidebar">
+          <div className="sidebar-user">
             <ul className="menu-list">
               <li
                 className="menu-item active"

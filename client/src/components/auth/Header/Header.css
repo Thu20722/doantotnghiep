@@ -1,0 +1,128 @@
+/* Header.css */
+.header-ad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-ad .header-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-ad .icons-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 15px;
+}
+
+.header-ad .icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    color: #667085;
+}
+
+.header-ad .icon:hover {
+    color: #2f80ed;
+}
+
+.header-ad .icon:active {
+    transform: scale(0.9);
+}
+
+.header-ad .icon-wrapper {
+    position: relative;
+}
+
+.header-ad .notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.header-ad .account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.header-ad .account-info:hover {
+    background: #f0f0f0;
+}
+
+.profile-image-wrapper {
+    position: relative;
+}
+
+.header-ad .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.header-ad .online-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: green;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.header-ad .account-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-ad .account-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-ad .account-role {
+    font-size: 12px;
+    color: gray;
+}
+
+/* .header-ad {
+    width: calc(100% - 250px);
+    margin-left: 250px; 
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+} */
+
+
+.sidebar-collapsed + .header-ad {
+    width: calc(100% - 80px); 
+    margin-left: 80px;
+}
