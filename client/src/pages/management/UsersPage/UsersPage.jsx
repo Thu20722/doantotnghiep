@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoPlus } from 'react-icons/go';
-import { IoMdOptions } from 'react-icons/io';
+import { FaRegTrashAlt } from "react-icons/fa";
 import { IoSearch } from 'react-icons/io5';
 import { PiExportBold } from 'react-icons/pi';
 import UsersTable from './UsersTable/UsersTable';
 import './UsersPage.css';
 import HeaderAD from "../../../components/auth/Header/Header";
 import Sidebar from "../../../components/management/Sidebar/Sidebar";
+import ConfirmPopup from "../../../components/auth/ConfirmPopup/ConfirmPopup";
 
 const UsersPage = () => {
+  const [showDeleteAllPopup, setShowDeleteAllPopup] = useState(false);
+
+  const handleDeleteAllClick = () => {
+    setShowDeleteAllPopup(true); 
+  };
+
+  const handleConfirmDeleteAll = () => {
+    console.log("Đã xóa tất cả người dùng");
+    setShowDeleteAllPopup(false);
+  };
+
+  const handleCancelDeleteAll = () => {
+    setShowDeleteAllPopup(false);
+  };
+
   return (
     <div className="users-page">
       <Sidebar />
@@ -36,9 +52,9 @@ const UsersPage = () => {
               <IoSearch className="icon" />
               <input type="text" placeholder="Nhập thông tin cần tìm..." />
             </div>
-            <button className="filter-btn">
-              <IoMdOptions className="icon" />
-              <span>Filter</span>
+            <button className="delete-btn" onClick={handleDeleteAllClick}>
+              <FaRegTrashAlt className="icon" />
+              <span>Xóa tất cả</span>
             </button>
           </div>
 
@@ -47,6 +63,14 @@ const UsersPage = () => {
           </div>
         </div>
       </div>
+
+      {showDeleteAllPopup && (
+        <ConfirmPopup
+          message="Bạn có chắc muốn xóa tất cả người dùng?"
+          onConfirm={handleConfirmDeleteAll}
+          onCancel={handleCancelDeleteAll}
+        />
+      )}
     </div>
   );
 };

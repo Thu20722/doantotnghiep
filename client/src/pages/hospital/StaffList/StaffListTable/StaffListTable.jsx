@@ -3,37 +3,22 @@ import { FaEye, FaRegTrashAlt } from "react-icons/fa";
 import { LuPencil } from "react-icons/lu";
 import Pagination from "../../../../components/ui/pagination/Pagination";
 
-const hospitalData = [
-  {
-    id: "DSK",
-    name: "Bệnh viện đa khoa",
-    address: "Cao Thắng, Đà Nẵng",
-    email: "lamvyyt@gamil.com",
-    phone: "012383828981",
-  },
-  {
-    id: "DSK",
-    name: "Bệnh viện đa khoa",
-    address: "Cao Thắng, Đà Nẵng",
-    email: "lamvyyt@gamil.com",
-    phone: "012383828981",
-  },
-  {
-    id: "DSK",
-    name: "Bệnh viện đa khoa",
-    address: "Cao Thắng, Đà Nẵng",
-    email: "lamvyyt@gamil.com",
-    phone: "012383828981",
-  },
-];
+const stafflistData = [ {
+  id: `#3323333233`,
+  name: "Hoàng Ngọc Lâm",
+  cccd: "2111505311",
+  gender: "Nam",
+  position: "Điều dưỡng",
+  email: "lamnvyt@gamil.com",
+}];
 
 const ITEMS_PER_PAGE = 10;
 
-const HospitalTable = () => {
+const StaffListTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(hospitalData.length / ITEMS_PER_PAGE);
-  const paginatedData = hospitalData.slice(
+  const totalPages = Math.ceil(stafflistData.length / ITEMS_PER_PAGE);
+  const paginatedData = stafflistData.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -46,32 +31,36 @@ const HospitalTable = () => {
             <th>
               <input type="checkbox" />
             </th>
-            <th>Mã</th>
-            <th>Tên</th>
-            <th>Địa chỉ</th>
+            <th>STT</th>
+            <th>Mã nhân viên</th>
+            <th>Tên nhân viên</th>
+            <th>CCCD</th>
+            <th>Giới tính</th>
+            <th>Chức vụ</th>
             <th>Email</th>
-            <th>SĐT</th>
             <th>Hành động</th>
           </tr>
         </thead>
         <tbody>
-          {paginatedData.map((hospital, index) => (
+          {paginatedData.map((staff, index) => (
             <tr key={index}>
               <td>
                 <input type="checkbox" />
               </td>
-              <td style={{ color: "#2F80ED" }}>{hospital.id}</td>
-              <td>{hospital.name}</td>
-              <td>{hospital.address}</td>
-              <td>{hospital.email}</td>
-              <td>{hospital.phone}</td>
+              <td>{(currentPage - 1) * ITEMS_PER_PAGE + index + 1}</td>
+              <td>{staff.id}</td>
+              <td>{staff.name}</td>
+              <td>{staff.cccd}</td>
+              <td>{staff.gender}</td>
+              <td>{staff.position}</td>
+              <td>{staff.email}</td>
               <td className="icon-td">
                 <div className="icon-container">
                   <span className="tb-icon">
                     <FaEye />
                   </span>
                   <span className="tb-icon">
-                    <LuPencil />
+                    < LuPencil />
                   </span>
                   <span className="tb-icon">
                     <FaRegTrashAlt />
@@ -92,4 +81,4 @@ const HospitalTable = () => {
   );
 };
 
-export default HospitalTable;
+export default StaffListTable;

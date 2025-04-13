@@ -48,7 +48,9 @@ const LinkedAgencyTable = () => {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>
+              <input type="checkbox" />
+            </th>
             <th>Mã đơn vị</th>
             <th>Tên</th>
             <th>Địa chỉ</th>

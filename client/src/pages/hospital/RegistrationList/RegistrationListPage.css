@@ -1,0 +1,14 @@
+
+.registration-list-page .dropdown-filter-mg .filter-select-mg {
+  min-width: 400px;
+  width: auto;
+  border-radius: 8px;
+  margin-left: 30px;
+  background-color: aliceblue;
+  border: 1px solid #2F80ED;
+  padding: 9px 10px;
+}
+
+.dropdown-filter-mg .filter-select-mg option {
+    font-size: 14px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
-import { IoMdOptions } from "react-icons/io";
+import { FaRegTrashAlt } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { PiExportBold } from "react-icons/pi";
 import HospitalTable from "./HospitalTable/HospitalTable";
@@ -35,9 +35,9 @@ const HospitalManagementPage = () => {
               <IoSearch className="icon" />
               <input type="text" placeholder="Nhập thông tin cần tìm" />
             </div>
-            <button className="filter-btn">
-              <IoMdOptions className="icon" />
-              <span>Filter</span>
+            <button className="delete-btn">
+              <FaRegTrashAlt className="icon" />
+              <span>Xóa tất cả</span>
             </button>
           </div>
 

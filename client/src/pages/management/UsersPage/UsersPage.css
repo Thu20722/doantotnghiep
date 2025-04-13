@@ -77,17 +77,23 @@
 }
 
 .export-btn,
-.filter-btn {
+.delete-btn {
   display: flex;
   font-size: 14px;
   align-items: center;
-  background-color: #E8EDFF;
-  color: #2F80ED;
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.export-btn{
+  background-color: #E8EDFF;
+  color: #2F80ED;
+}
+.delete-btn{
+  color:red;
+  background: #FCDCDC;
 }
 .add-btn{
   display: flex;
@@ -102,18 +108,25 @@
   transition: 0.3s ease;
 }
 
-.export-btn:hover,
-.filter-btn:hover {
+.export-btn:hover {
   background-color: #d0d9ff;
+}
+
+.delete-btn:hover{
+  background-color: #eec0c0;
+
 }
 .add-btn:hover {
   background-color: #1b4dff;
 }
 
-.export-btn .icon,
-.filter-btn .icon {
+.export-btn .icon {
   margin-right: 5px;
   color: #2F80ED;
+}
+.delete-btn .icon{
+  margin-right: 5px;
+  color: red;
 }
 .add-btn .icon{
   margin-right: 5px;

@@ -36,7 +36,8 @@
 .search-content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .search-title {
@@ -46,18 +47,20 @@
 }
 
 .search-input-wrapper {
-  /* width: auto; */
+  width: auto;
   display: flex;
   align-items: center;
+  width: 100% !important;
   gap: 10px;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .search-input-container {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 5px;
+  width: 100%;
 }
 
 .search-button {
@@ -145,7 +148,7 @@
   background-color: #1b4dff;
 }
 .search-page .react-datepicker-wrapper {
-  width: 300px !important;
+  width: 400px !important;
 }
 
 .search-page .react-datepicker__input-container input {

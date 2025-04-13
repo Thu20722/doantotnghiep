@@ -22,5 +22,18 @@ export const routes = [
   ...generateRoutes("hospital", hospitalRoutes),
   // ...generateRoutes("staff", staffRoutes),
   // ...generateRoutes("partners", partnerRoutes),
-  ...generateRoutes("auth", authRoutes)
+  ...generateRoutes("auth", authRoutes),
+
+  {
+    path: "/management/UsersPage",
+    element: <managementRoutes.UsersPage />,
+  },
+  {
+    path: "/management/UsersDetails/:id",
+    element: <managementRoutes.UsersDetails />,
+  },
+  {
+    path: "/management/UsersUpdate/:id",
+    element: <managementRoutes.UsersUpdate />,
+  }
 ];

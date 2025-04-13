@@ -47,7 +47,9 @@ const BloodDonationCampaignTable = () => {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>
+              <input type="checkbox" />
+            </th>
             <th>Mã</th>
             <th>Tên</th>
             <th>Nội dung</th>

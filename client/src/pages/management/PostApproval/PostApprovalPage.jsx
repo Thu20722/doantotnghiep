@@ -1,9 +1,9 @@
-import React from 'react';
-import { GoPlus } from 'react-icons/go';
-import { IoMdOptions } from 'react-icons/io';
-import { IoSearch } from 'react-icons/io5';
-import { PiExportBold } from 'react-icons/pi';
-import PostApprovalTable from './PostApprovalTable/PostApprovalTable'
+import React from "react";
+import { GoPlus } from "react-icons/go";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { IoSearch } from "react-icons/io5";
+import { PiExportBold } from "react-icons/pi";
+import PostApprovalTable from "./PostApprovalTable/PostApprovalTable";
 import HeaderAD from "../../../components/auth/Header/Header";
 import Sidebar from "../../../components/management/Sidebar/Sidebar";
 
@@ -33,11 +33,14 @@ const PostApprovalPage = () => {
           <div className="toolbar-mg">
             <div className="search-box-mg">
               <IoSearch className="icon" />
-              <input type="text" placeholder="Nhập thông tin bài đăng cần tìm..." />
+              <input
+                type="text"
+                placeholder="Nhập thông tin bài đăng cần tìm..."
+              />
             </div>
-            <button className="filter-btn">
-              <IoMdOptions className="icon" />
-              <span>Filter</span>
+            <button className="delete-btn">
+              <FaRegTrashAlt className="icon" />
+              <span>Xóa tất cả</span>
             </button>
           </div>
 

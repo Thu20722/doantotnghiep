@@ -3,20 +3,23 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  
 }
 
 .book-page .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-grow: 1;
 }
 
 .content-wrapper {
   display: flex;
   gap: 20px;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .sidebar-user {
@@ -59,7 +62,7 @@
 }
 
 .menu-icon {
-  width: 16px; /* Kích thước icon */
+  width: 16px; 
   height: 16px;
   display: flex;
   align-items: center;
@@ -70,12 +73,13 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
+  flex-grow: 1;
 }
 .book-page .filter-select {
-  width: 300px;
+  width: auto;
 }
 .book-page .react-datepicker-wrapper {
-  width: 280px !important;
+  width: 350px !important;
 }
 
 .book-page .react-datepicker__input-container input {

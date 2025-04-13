@@ -11,11 +11,11 @@ import logo from "../../assets/image/Logo.svg";
 const menuItems = [
   { path: "/hospital/RegisterBloodCampaignPage", key: "registerCampaign", icon: <GiMedicalDrip />, label: "Đăng ký đợt hiến máu" },
   { path: "/hospital/PostListPage", key: "postList", icon: <MdOutlinePostAdd />, label: "Danh sách bài đăng" },
-  { path: "/hospital/RegistrationList", key: "registrationList", icon: <HiOutlineUserGroup />, label: "Danh sách đăng ký" },
+  { path: "/hospital/RegistrationListPage", key: "registrationList", icon: <HiOutlineUserGroup />, label: "Danh sách đăng ký" },
   { path: "/hospital/SendRequestPage", key: "sendRequest", icon: <IoSend />, label: "Gửi yêu cầu" },
-  { path: "/hospital/StaffList", key: "staffList", icon: <IoPeopleOutline />, label: "Danh sách nhân viên" },
-  { path: "/hospital/HospitalInfo", key: "hospitalInfo", icon: <FaHospitalUser />, label: "Thông tin bệnh viện" },
-  { path: "/hospital/StaffAssignment", key: "staffAssignment", icon: <MdAssignmentInd />, label: "Phân công nhân viên" },
+  { path: "/hospital/StaffListPage", key: "staffList", icon: <IoPeopleOutline />, label: "Danh sách nhân viên" },
+  { path: "/hospital/HospitalInfoPage", key: "hospitalInfo", icon: <FaHospitalUser />, label: "Thông tin bệnh viện" },
+  { path: "/hospital/StaffAssignmentPage", key: "staffAssignment", icon: <MdAssignmentInd />, label: "Phân công nhân viên" },
 ];
 
 const SidebarHobital = () => {

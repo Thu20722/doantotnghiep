@@ -6,31 +6,31 @@
 }
 
 .registrationform-page .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.registrationform-page .form-register-container {
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
+.registrationform-page .main-content{
+  padding: 20px 40px;
+  flex: 1;
 }
+
 .form-register-container h2 {
   margin-bottom: 16px;
   color: #32338F;
   font-weight: 500;
 }
 
-/* Câu hỏi */
 .question {
   margin-bottom: 15px;
   border-radius: 16px;
   border: 1px solid #2f80ed;
   padding: 0 0px 10px 0px;
   align-items: center;
+  
 }
 
 .question p {

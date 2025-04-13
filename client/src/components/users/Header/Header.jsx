@@ -37,7 +37,10 @@ const Header = () => {
           { path: "/users/FaqPage", label: "Hỏi - Đáp" },
           { path: "/users/ContactPage", label: "Liên hệ" },
         ].map((item) => (
-          <NavLink key={item.path} to={item.path} activeClassName="active">
+          <NavLink
+            key={item.path}
+            to={item.path}
+            className={({ isActive }) => (isActive ? "active" : "")}>
             {item.label}
           </NavLink>
         ))}
@@ -53,10 +56,12 @@ const Header = () => {
             <span>{user.name}</span>
           </div>
         ) : (
-          <Button colorScheme="blue" onClick={() => navigate("/users/SignInPage")}>
-            Đăng nhập 
+          <Button
+            colorScheme="blue"
+            onClick={() => navigate("/users/SignInPage")}>
+            Đăng nhập
           </Button>
-         )} 
+        )}
       </div>
     </header>
   );

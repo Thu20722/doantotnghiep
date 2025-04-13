@@ -40,7 +40,6 @@ const SearchPage = () => {
 
       <div className="container">
         <h1 className="title">Lịch hiến máu</h1>
-        {/* Ô tìm kiếm */}
         <div className="search-container">
           <div className="search-content">
             <span className="search-title">
@@ -55,8 +54,6 @@ const SearchPage = () => {
               <button className="search-button">Tìm kiếm</button>
             </div>
           </div>
-
-          {/* Bộ lọc đơn vị tổ chức (nằm cùng hàng với ô tìm kiếm) */}
           <select
             value={filterOrg}
             onChange={(e) => setFilterOrg(e.target.value)}

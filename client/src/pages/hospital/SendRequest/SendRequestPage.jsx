@@ -1,6 +1,7 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
-import { IoMdOptions } from "react-icons/io";
+import { FaRegTrashAlt } from "react-icons/fa";
+
 import { IoSearch } from "react-icons/io5";
 import { PiExportBold } from "react-icons/pi";
 import SendRequestTable from "./SendRequestTable/SendRequestTable";
@@ -17,7 +18,9 @@ const SendRequestPage = () => {
 
         <div className="container-mg">
           <div className="header-mg">
-            <span className="title-mg">Danh sách yêu cầu tổ chức hiến máu cho tại vị liên kết</span>
+            <span className="title-mg">
+              Danh sách yêu cầu tổ chức hiến máu cho tại vị liên kết
+            </span>
             <div className="actions-mg">
               <button className="export-btn">
                 <PiExportBold className="icon" />
@@ -38,9 +41,9 @@ const SendRequestPage = () => {
                 placeholder="Nhập thông tin yêu cầu cần tìm..."
               />
             </div>
-            <button className="filter-btn">
-              <IoMdOptions className="icon" />
-              <span>Filter</span>
+            <button className="delete-btn">
+              <FaRegTrashAlt className="icon" />
+              <span>Xóa tất cả</span>
             </button>
           </div>
 

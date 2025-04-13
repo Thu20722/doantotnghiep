@@ -1,15 +1,15 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
-import { FaRegTrashAlt } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { PiExportBold } from "react-icons/pi";
-import BloodDonationCampaignTable from "./BloodDonationCampaignTable/BloodDonationCampaignTable";
+import {FaRegTrashAlt } from "react-icons/fa";
+import StaffAssignmentTable from "./StaffAssignmentTable/StaffAssignmentTable";
 import HeaderAD from "../../../components/auth/Header/Header";
-import Sidebar from "../../../components/management/Sidebar/Sidebar";
+import Sidebar from "../../../components/hospital/SidebarHobital";
 
-const BloodDonationCampaignPage = () => {
+const StaffAssignmentPage = () => {
   return (
-    <div className="blood-donation-page">
+    <div className="staff-assignment-page">
       <Sidebar />
 
       <div className="main-mg">
@@ -17,7 +17,7 @@ const BloodDonationCampaignPage = () => {
 
         <div className="container-mg">
           <div className="header-mg">
-            <span className="title-mg">Đợt hiến máu</span>
+            <span className="title-mg">Danh sách phân công</span>
             <div className="actions-mg">
               <button className="export-btn">
                 <PiExportBold className="icon" />
@@ -25,7 +25,7 @@ const BloodDonationCampaignPage = () => {
               </button>
               <button className="add-btn">
                 <GoPlus className="icon" />
-                <span>Tạo mới</span>
+                <span>Thêm nhiệm vụ</span>
               </button>
             </div>
           </div>
@@ -33,10 +33,7 @@ const BloodDonationCampaignPage = () => {
           <div className="toolbar-mg">
             <div className="search-box-mg">
               <IoSearch className="icon" />
-              <input
-                type="text"
-                placeholder="Nhập thông tin chiến dịch cần tìm..."
-              />
+              <input type="text" placeholder="Nhập thông tin cần tìm" />
             </div>
             <button className="delete-btn">
               <FaRegTrashAlt className="icon" />
@@ -44,8 +41,8 @@ const BloodDonationCampaignPage = () => {
             </button>
           </div>
 
-          <div className="blood-donation-table-container">
-            <BloodDonationCampaignTable />
+          <div className="assignment-table-container">
+            <StaffAssignmentTable />
           </div>
         </div>
       </div>
@@ -53,4 +50,4 @@ const BloodDonationCampaignPage = () => {
   );
 };
 
-export default BloodDonationCampaignPage;
+export default StaffAssignmentPage;

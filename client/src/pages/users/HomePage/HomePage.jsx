@@ -20,6 +20,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useNavigate } from "react-router-dom";
 
 const steps = [
   {
@@ -102,6 +103,7 @@ const benefits = [
 ];
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <div className="home">
       <div className="header">
@@ -129,7 +131,9 @@ const HomePage = () => {
             </span>
             <CustomDatePicker className="search_input_container" />
           </div>
-          <Button className="search_button">Tìm kiếm</Button>
+          <Button className="search_button" onClick={() => {
+                  navigate("/users/SearchPage");
+                }}>Tìm kiếm</Button>
         </div>
       </div>
 

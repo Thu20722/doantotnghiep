@@ -56,7 +56,9 @@ const PostListTable = () => {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>
+              <input type="checkbox" />
+            </th>
             <th>Mã</th>
             <th>Tiêu đề</th>
             <th>Số lượng</th>
